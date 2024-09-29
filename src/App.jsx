@@ -104,6 +104,7 @@ const App = () => {
       const fighterToRemove = updatedTeam[index];
       updatedTeam.splice(index, 1);
       setMoney(money + fighterToRemove.price);
+      handleTotalStats(updatedTeam);
       return updatedTeam;
     });
   };
